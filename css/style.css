@@ -1,0 +1,21 @@
+body {
+  font-size:16px;
+  line-height:30px;
+  color:black;
+  font-weight:medium;
+  font-family:Roboto;
+}
+.type {
+  font-size:16px;
+  line-height:20px;
+  color:black;
+  font-weight:regular;
+  font-family:Roboto;
+}
+.sort {
+  font-size:14px;
+  line-height:18px;
+  color:black;
+  font-weight:regular;
+  font-family:Roboto;
+}
