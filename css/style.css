@@ -28,6 +28,7 @@ body {
   width: 160px;
   min-height: 115px;
   float: left;
+  margin-left: 19px;
   box-shadow: 0 0 0 3px pink;
 }
 
@@ -53,15 +54,15 @@ body {
   min-height: 427px;
   margin: 0 auto;
   box-shadow: 0 0 0 3px blue;
-  margin-bottom: 15px;
+  margin-bottom: 66px;
 }
 
 .products {
   width: 1102px;
-  min-height: 347px;
+  min-height: 350px;
   box-shadow: 0 0 0 3px blue;
   margin-left:20px;
-  margin-bottom: 83px;
+  margin-bottom: 80px;
 }
 
 .products_web{
@@ -86,20 +87,19 @@ body {
 }
 .about{
   width: 1162px;
-  min-height: 529px;
+  min-height: 530px;
   box-shadow: 0 0 0 3px blue;
-  margin-bottom: 80px;
   margin-left:20px;
 }
 .features {
   width: 662px;
-  min-height: 531px;
+  min-height: 530px;
   float:left;
   box-shadow: 0 0 0 3px pink;
 }
 .diagram {
   width: 360px;
-  min-height: 453px;
+  min-height: 530px;
   float:right;
   box-shadow: 0 0 0 3px pink;
 }
