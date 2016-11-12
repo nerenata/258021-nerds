@@ -8,6 +8,7 @@ body {
 .main-header {
   min-height: 115px;
   box-shadow: 0 0 0 3px green;
+  margin-bottom: 20px;
 }
 
 .clearfix::after {
@@ -17,7 +18,7 @@ body {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   min-height: 115px;
   margin: 0 auto;
   box-shadow: 0 0 0 3px yellow;
@@ -26,19 +27,107 @@ body {
 .small-logo {
   width: 160px;
   min-height: 115px;
-  box-shadow: 0 0 0 3px blue;
-}
-
-.main-navigation {
-  width: 800px;
-  min-height: 115px;
   float: left;
   box-shadow: 0 0 0 3px pink;
 }
 
-.user-block{
-  width: 130px;
+
+.main-navigation {
+  width: 439px;
   min-height: 115px;
   float: left;
-  box-shadow: 0 0 0 3px orange;
+  margin-left: 202px;
+  box-shadow: 0 0 0 3px pink;
+}
+
+.user-block{
+  width: 115px;
+  min-height: 115px;
+  float: left;
+  margin-left: 244px;
+  box-shadow: 0 0 0 3px pink;
+}
+
+.slider__list{
+  width: 1162px;
+  min-height: 427px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 3px blue;
+  margin-bottom: 15px;
+}
+
+.products {
+  width: 1102px;
+  min-height: 347px;
+  box-shadow: 0 0 0 3px blue;
+  margin-left:20px;
+  margin-bottom: 83px;
+}
+
+.products_web{
+  width: 302px;
+  min-height: 348px;
+  box-shadow: 0 0 0 1px pink;
+  margin-right: 100px;
+  float:left;
+}
+.products_app{
+  width: 302px;
+  min-height: 348px;
+  box-shadow: 0 0 0 1px pink;
+  margin-right: 95px;
+  float:left;
+}
+.products_presentation{
+  width: 302px;
+  min-height: 348px;
+  box-shadow: 0 0 0 1px pink;
+  float:left;
+}
+.about{
+  width: 1162px;
+  min-height: 529px;
+  box-shadow: 0 0 0 3px blue;
+  margin-bottom: 80px;
+  margin-left:20px;
+}
+.features {
+  width: 662px;
+  min-height: 531px;
+  float:left;
+  box-shadow: 0 0 0 3px pink;
+}
+.diagram {
+  width: 360px;
+  min-height: 453px;
+  float:right;
+  box-shadow: 0 0 0 3px pink;
+}
+
+.works{
+  width: 1162px;
+  min-height: 181px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 3px blue;
+  margin-bottom: 86px;
+}
+.main-footer {
+  min-width:1440px;
+  min-height:418px;
+  box-shadow: 0 0 0 3px blue;
+}
+.footer-contacts {
+  min-width:320px;
+  min-height:310px;
+  box-shadow: 0 0 0 3px pink;
+  margin-right:19px;
+  margin-bottom: 69px;
+  float:left;
+}
+.footer-social{
+  min-width:962px;
+  min-height:80px;
+  box-shadow: 0 0 0 3px pink;
+  float:left;
+  margin-right:19px;
 }
