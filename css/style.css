@@ -1,13 +1,13 @@
 html
 body {
   min-width:1440px;
-  min-height:2476px;
-  margin: 0;
+  min-height:3214px;
+  margin: 0 auto;
   padding: 0;
 }
 .main-header {
   min-height: 115px;
-  box-shadow: 0 0 0 3px green;
+  box-shadow: 0 0 0 1px green;
   margin-bottom: 20px;
 }
 
@@ -18,35 +18,34 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   min-height: 115px;
   margin: 0 auto;
-  box-shadow: 0 0 0 3px yellow;
+  box-shadow: 0 0 0 1px yellow;
 }
 
 .small-logo {
   width: 160px;
   min-height: 115px;
   float: left;
-  margin-left: 19px;
-  box-shadow: 0 0 0 3px pink;
+  box-shadow: 0 0 0 1px pink;
 }
 
 
 .main-navigation {
-  width: 439px;
+  width: 440px;
   min-height: 115px;
   float: left;
-  margin-left: 202px;
-  box-shadow: 0 0 0 3px pink;
+  margin-left: 200px;
+  box-shadow: 0 0 0 1px pink;
 }
 
 .user-block{
   width: 115px;
   min-height: 115px;
-  float: left;
-  margin-left: 244px;
-  box-shadow: 0 0 0 3px pink;
+  float: right;;
+  margin-left: 200px;
+  box-shadow: 0 0 0 1px pink;
 }
 
 .slider__list{
@@ -60,7 +59,7 @@ body {
 .products {
   width: 1102px;
   min-height: 350px;
-  box-shadow: 0 0 0 3px blue;
+  box-shadow: 0 0 0 1px blue;
   margin-left:20px;
   margin-bottom: 80px;
 }
@@ -86,22 +85,24 @@ body {
   float:left;
 }
 .about{
-  width: 1162px;
+  width: 1160px;
   min-height: 530px;
-  box-shadow: 0 0 0 3px blue;
-  margin-left:20px;
+  box-shadow: 0 0 0 1px blue;
+
 }
 .features {
-  width: 662px;
+  width: 660px;
   min-height: 530px;
   float:left;
-  box-shadow: 0 0 0 3px pink;
+  box-shadow: 0 0 0 1px pink;
+  margin-left:20px;
 }
 .diagram {
   width: 360px;
   min-height: 530px;
-  float:right;
-  box-shadow: 0 0 0 3px pink;
+  float:left;
+  margin-left:100px;
+  box-shadow: 0 0 0 1px pink;
 }
 
 .works{
@@ -117,17 +118,67 @@ body {
   box-shadow: 0 0 0 3px blue;
 }
 .footer-contacts {
-  min-width:320px;
+  min-width:332px;
   min-height:310px;
-  box-shadow: 0 0 0 3px pink;
+  box-shadow: 0 0 0 1px pink;
   margin-right:19px;
   margin-bottom: 69px;
   float:left;
 }
 .footer-social{
-  min-width:962px;
-  min-height:80px;
-  box-shadow: 0 0 0 3px pink;
+  min-width:960px;
+  min-height:140px;
+  box-shadow: 0 0 0 1px pink;
   float:left;
   margin-right:19px;
+}
+
+form {
+  width: 260px;
+  min-height: 787px;
+  box-shadow: 0 0 0 1px pink;
+  float:left;
+  margin-top: 180px;
+}
+.products_catalog {
+  width: 760px;
+  min-height: 1925px;
+  box-shadow: 0 0 0 1px blue;
+  float:right;
+  margin-left: 120px;
+  margin-top: 60px;
+}
+.products__item-pink,
+.products__item-sedona
+.products__item-mishka
+.products__item-a-plus
+.products__item-kvast{
+  width: 360px;
+  min-height: 619px;
+  box-shadow: 0 0 0 1px pink;
+  float:left;
+  margin-right: 40px;
+}
+.sort {
+  width: 760px;
+  min-height: 30px;
+  float:left;
+  margin-left: 140px;
+  box-shadow: 0 0 0 1px pink;
+  margin-bottom: 60px;
+  margin-top: 180px;
+}
+.page-number {
+  width: 444px;
+  min-height: 48px;
+  float:left;
+  margin-left: 420px;
+  box-shadow: 0 0 0 1px pink;
+}
+.main-title {
+  width: 760px;
+  min-height: 83px;
+  margin-top:100px;
+  box-shadow: 0 0 0 1px pink;
+  margin: 0 auto;
 }
