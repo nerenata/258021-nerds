@@ -1,14 +1,48 @@
 html
 body {
-  min-width:1440px;
+  width:1440px;
   min-height:3214px;
+  font-weight:400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  color:#000000;
+  background:#eeeeee url("img/grey back.jpg") no-repeat top fixed;
   margin: 0 auto;
   padding: 0;
 }
 .main-header {
   min-height: 115px;
-  box-shadow: 0 0 0 1px green;
+  /*box-shadow: 0 0 0 1px green;*/
   margin-bottom: 20px;
+  color:#000000;
+  text-decoration: none;
+}
+.main-navigation a {
+  display: block;
+  padding-right:43px;
+  padding-left:3px;
+  padding-top:75px;
+  color:#000000;
+  font-weight:bold;
+  text-decoration: none;
+  text-transform:uppercase;
+}
+.main-navigation a:hover {
+  color:#fb565a;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: top;
 }
 
 .clearfix::after {
@@ -30,10 +64,15 @@ body {
   float: left;
   box-shadow: 0 0 0 1px pink;
 }
-
+.small-logo img{
+  padding-top: 50px;
+}
+.small-logo img:hover {
+  opacity: 0.8;
+}
 
 .main-navigation {
-  width: 440px;
+  width: 445px;
   min-height: 115px;
   float: left;
   margin-left: 200px;
@@ -46,7 +85,38 @@ body {
   float: right;;
   margin-left: 200px;
   box-shadow: 0 0 0 1px pink;
+
 }
+.trash {
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: top;
+  color:#000000;
+  text-decoration:none;
+  display: inline-block;
+  text-transform:uppercase;
+  font-weight:bold;
+  vertical-align: top;
+  padding-top:75px;
+  padding-left:25px;
+}
+
+.trash:hover {
+color:#fb565a;
+}
+.trash::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("img/cart-icon.png") no-repeat;
+  background-position: 800px 50px;
+}
+
 
 .slider__list{
   width: 1162px;
@@ -148,11 +218,7 @@ form {
   margin-left: 120px;
   margin-top: 60px;
 }
-.products__item-pink,
-.products__item-sedona
-.products__item-mishka
-.products__item-a-plus
-.products__item-kvast{
+.products__item {
   width: 360px;
   min-height: 619px;
   box-shadow: 0 0 0 1px pink;
