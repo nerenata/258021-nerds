@@ -55,14 +55,14 @@ body {
   width: 1160px;
   min-height: 115px;
   margin: 0 auto;
-  box-shadow: 0 0 0 1px yellow;
+  /*box-shadow: 0 0 0 1px yellow;*/
 }
 
 .small-logo {
   width: 160px;
   min-height: 115px;
   float: left;
-  box-shadow: 0 0 0 1px pink;
+  /*box-shadow: 0 0 0 1px pink;*/
 }
 .small-logo img{
   padding-top: 50px;
@@ -76,7 +76,7 @@ body {
   min-height: 115px;
   float: left;
   margin-left: 200px;
-  box-shadow: 0 0 0 1px pink;
+  /*box-shadow: 0 0 0 1px pink;*/
 }
 
 .user-block{
@@ -84,7 +84,7 @@ body {
   min-height: 115px;
   float: right;;
   margin-left: 170px;
-  box-shadow: 0 0 0 1px pink;
+  /*box-shadow: 0 0 0 1px pink;*/
 
 }
 .trash {
@@ -110,18 +110,28 @@ body {
 
 .slider{
   position:relative;
-  width: 1160px;
   height: 430px;
   margin: 0 auto;
-  box-shadow: 0 0 0 1px blue;
+  /*box-shadow: 0 0 0 1px blue;*/
   margin-bottom: 76px;
   background:#eeeeee;
 }
+
+.slider__controls{
+  position:absolute;
+  bottom:95px;
+  left:50%;
+  width:200px;
+  height:10px;
+  margin-left:-100px;
+  text-align:center;
+  z-index:1000;
+}
 .slider__controls i{
   display:inline-block;
-  width:8px;
-  height:8px;
-  margin:0 3px;
+  width:12px;
+  height:12px;
+  margin:0 5px;
   background:white;
   border:3px solid white;
   vertical-align:top;
@@ -132,7 +142,6 @@ body {
   background:#c1c1c1;
 }
 .slider__list{
-  position:absolute;
   top:0;
   left:0;
   width:100%;
@@ -168,9 +177,9 @@ body {
   border-radius:3px;
 }
 .slider__item:nth-child(1){
-  background-image:url('img/slider-1.png');
+  background-image:url('../img/slider-1.png');
   background-repeat:no-repeat;
-  background-position:100% 0px;
+  background-position:50% 10px;
 }
 .slider__item{
   display:none;
@@ -179,12 +188,12 @@ body {
   display:block;
 }
 .slider__item:nth-child(2){
-  background-image:url('img/slider-2.png');
+  background-image:url('../img/slider-2.png');
   background-repeat:no-repeat;
-  background-position:100% 10px;
+  background-position:100% 100px;
 }
 .slider__item:nth-child(3){
-  background-image:url('img/slider-3.png');
+  background-image:url('../img/slider-3.png');
   background-repeat:no-repeat;
   background-position:100% 0;
 }
@@ -236,11 +245,17 @@ body {
   background:#fb565a;
   border-radius:3px;
 }
+.products .btn2{
+  background:#00ca74;
+}
+.products .btn3{
+  background:#efc84a;
+}
 
 .about{
   width: 1160px;
   min-height: 530px;
-  box-shadow: 0 0 0 1px blue;
+  /*box-shadow: 0 0 0 1px blue;*/
 
 }
 .features {
@@ -263,16 +278,19 @@ body {
   color:black;
   text-transform:uppercase;
   font-weight:bold;
-  margin-top:40px;
+  margin-top:35px;
   padding-left:2px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .features ul{
-  margin:0;
-  padding:20;
-  list-style: none;
+  list-style-type: none;
 }
-
+.features li:before{
+  content: "- ";
+  color: red;
+  font-size: 25px;
+  line-height: 40px;
+}
 
 .diagram {
   width: 360px;
@@ -290,33 +308,61 @@ body {
   font-weight:bold;
   margin-top:33px;
   padding-left:20px;
-  margin-bottom: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
-.diagram .diagram__procent_amount{
+.diagram__procent_amount {
   font-size:45px;
+  line-height:10px;
   font-weight:bold;
+}
+.diagram__procent_amount td{
+   padding-left:5px;
+ }
+sup{
+  font-size:60%;
+  line-height:3px;
+  position:static;
+  vertical-align: top;
+}
+.diagram__procent_item td{
+  padding-top: 37px;
+  line-height: 18px;
+}
+
+.line {
+  background-color:#eeeeee;
+  color:#eeeeee;
+  height: 2px;
 }
 
 .works{
   width: 1162px;
   min-height: 181px;
   margin: 0 auto;
-  box-shadow: 0 0 0 1px blue;
-  margin-bottom: 86px;
+  /*box-shadow: 0 0 0 1px blue;*/
+  margin-bottom: 85px;
 }
 .works a{
   width: 260px;
   min-height:182px;
-  box-shadow: 0 0 0 1px pink;
+  /*box-shadow: 0 0 0 1px pink;*/
   margin-right:40px;
   float:left;
+  display: table;
+}
+.works a:last-child {
+  margin-right:0;
+}
+.works__item{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .main-footer {
   min-width:1440px;
   min-height:418px;
-  box-shadow: 0 0 0 3px blue;
+  box-shadow: 0 0 0 1px blue;
 }
 .footer-contacts {
   min-width:332px;
