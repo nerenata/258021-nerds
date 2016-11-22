@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -32,35 +34,14 @@
         </div>
       </div>
     </header>
-    <main class="container clearfix">
-        <h1 class="main-title">Магазин готовых шаблонов</h1>
-      <form>
-        <div class="price">
-          <p>Стоимость</p>
-          <div id="range-slider">
-          <input type="range" min="0" max="15000" step="50" multiple>
-          </div>
-          <label>От<input type="text"></label>
-          <label>До<input type="text"></label>
-        </div>
-        <div class="type">
-          <p class="type-title">Сетка</p>
-          <input type="radio" id="radio1" checked><label for="radio1">Адаптивная</label>
-          <input type="radio" id="radio2" ><label for="radio2">Фиксированная</label>
-          <input type="radio" id="radio3" ><label for="radio3">Резиновая</label>
-        </div>
-        <div class="special">
-          <p class="special-title">Особенности</p>
-          <input type="checkbox" id="check1" checked><label for="check1">Слайдер</label>
-          <input type="checkbox" id="check2" ><label for="check2">Блок преимуществ</label>
-          <input type="checkbox" id="check3" checked><label for="check3">Новости</label>
-          <input type="checkbox" id="check4" ><label for="check4">Галерея</label>
-          <input type="checkbox" id="check5" ><label for="check5">Корзина</label>
-        </div>
-        <button type="submit">Показать</button>
-      </form>
+    <main >
+      <div class="title">
+        <h1 class="title__main">Магазин готовых шаблонов</h1>
+      </div>
+      <div class="container clearfix">
       <div class="sort">
-        <p class="sort-title">Сортировать</p>
+         <p class="price_item">Стоимость:</p>
+         <p class="sort_item">Сортировать:</p>
         <ul>
           <li>
           <a href="#">По цене</a>
@@ -72,66 +53,105 @@
           <a href="#">По названию</a>
           </li>
           <li>
-          <a href="#">&#9650</a>
+          <a class="index_up" href="#">&#9650</a>
           </li>
           <li>
-          <a href="#">&#9660</a>
+          <a class="index_down" href="#">&#9660</a>
           </li>
         </ul>
       </div>
+      <form action="form.php" method="GET">
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+          </div>
+        </div>
+        <div class="type">
+          <p class="type-title">Сетка:</p>
+          <input type="radio" id="radio1" checked><label for="radio1">Адаптивная</label><br>
+          <input type="radio" id="radio2" ><label for="radio2">Фиксированная</label><br>
+          <input type="radio" id="radio3" ><label for="radio3">Резиновая</label><br>
+        </div>
+        <div class="special">
+          <p class="special-title">Особенности:</p>
+          <input type="checkbox" id="check1" checked><label for="check1">Слайдер</label><br>
+          <input type="checkbox" id="check2" ><label for="check2">Блок преимуществ</label><br>
+          <input type="checkbox" id="check3" checked><label for="check3">Новости</label><br>
+          <input type="checkbox" id="check4" ><label for="check4">Галерея</label><br>
+          <input type="checkbox" id="check5" ><label for="check5">Корзина</label>
+        </div>
+        <button type="submit">Показать</button>
+      </form>
+
+
       <div class="products_catalog">
         <div class="products__item">
           <div class="products__item-sedona">
-            <a href="#"><img src="img/img-sedona.png" width="360" height="575" alt="Sedona"></a>
-            <a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Sedona_"></a>
+            <a href="#"><img src="img/img-sedona.png" width="358" height="615" alt="Sedona"></a>
+            <!--<a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Sedona_"></a>-->
           </div>
           <div class="products__item-pink">
-            <a href="#"><img src="img/img-pink.png" width="360" height="575" alt="Pink"></a>
-            <a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Pink_"></a>
+            <a href="#"><img src="img/img-pink.png" width="358" height="615" alt="Pink"></a>
+            <!--<a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Pink_"></a>-->
           </div>
           <div class="products__item-barbershop">
-            <a href="barbershop"><img src="img/img-barbershop.png" width="360" height="575" alt="Barbershop"></a>
-            <a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Barbershop_"></a>
+            <a href="barbershop"><img src="img/img-barbershop.png" width="358" height="615" alt="Barbershop"></a>
+            <!--<a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Barbershop_"></a>-->
           </div>
           <div class="products__item-mishka">
-            <a href="#"><img src="img/img-mishka.png" width="360" height="575" alt="Mishka"></a>
-            <a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Mishka_"></a>
+            <a href="#"><img src="img/img-mishka.png" width="358" height="615" alt="Mishka"></a>
+            <!--<a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Mishka_"></a>-->
           </div>
           <div class="products__item-a-plus">
-            <a href="#"><img src="img/img-aplus.png" width="360" height="575" alt="Aplus"></a>
-            <a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Aplus_"></a>
+            <a href="#"><img src="img/img-aplus.png" width="358" height="615" alt="Aplus"></a>
+            <!--<a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Aplus_"></a>-->
           </div>
           <div class="products__item-kvast">
-            <a href="#"><img src="img/img-kvast.png" width="360" height="575" alt="Kvast"></a>
-            <a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Kvast_"></a>
+            <a href="#"><img src="img/img-kvast.png" width="358" height="615" alt="Kvast"></a>
+            <!--<a href="#"><img src="img/white_back_copy.jpg" width="360" height="230" alt="Kvast_"></a>-->
           </div>
        </div>
+       <div class="page-number">
+          <a class="page-number_item" href="#">1</a>
+          <a class="page-number_item" href="#">2</a>
+          <a class="page-number_item" href="#">3</a>
+          <a class="page-number_item" href="#">Следующая</a>
+       </div>
      </div>
-    <div class="page-number">
-       <a class="page-number_item" href="#"><img src="img/page active.png" width="50" height="49">1</a>
-       <a class="page-number_item" href="#">2</a>
-       <a class="page-number_item" href="#">3</a>
-       <a class="page-number_item" href="#">Следующая</a>
     </div>
     </main>
     <footer class="main-footer">
+      <div class="footer-map">
+      <img src="img/map-marker.png" width="1440" height="416" alt="map">
       <div class="container">
-        <img src="img/map.jpg" width="1440" height="416" alt="map">
-         <section class="footer-contacts">
-          <h1>nerds design studio</h1>
+        <section class="footer-contacts">
+          <h3>nёrds design studio</h3>
           <p>
-            191186, Санкт-Петербург,
-            ул.Б.Конюшенная,д.19/8
-            тел.+7(812)275-75-75</p>
-            <a href="#">Напишите нам</a>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br><br>
+            тел. + 7(812) 275-75-75</p>
+            <a class="btn" href="#">Напишите нам</a>
         </section>
-        <section class="footer-social">
-          <a class="social-btn-vk" href="#"><img src="img/vk-icon.png" width="26" height="14" alt="vk"></a>
-          <a class="social-btn-fb" href="#"><img src="img/fb-icon.png" width="26" height="14" alt="fb"></a>
-          <a class="social-btn-inst" href="#"><img src="img/insta-icon.png" width="26" height="14" alt="insta"></a>
-          <h1>Давайте дружить, это выгодно!</h1>
+        <section class="footer-social clearfix">
+          <div class="social-btn">
+          <a class="social-btn-vk" href="#"></a>
+          <a class="social-btn-fb" href="#"></a>
+          <a class="social-btn-inst" href="#"></a>
+          </div>
+          <div class="social_text">
+          <p class="social_text_big">Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей</p>
+         </div>
         </section>
+      </div>
       </div>
     </footer>
   </body>
